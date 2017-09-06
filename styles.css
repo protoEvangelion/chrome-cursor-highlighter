@@ -1,0 +1,17 @@
+#super-dot {
+	background: rgba(255, 0, 0, 0.85);
+	border-radius: 50%;
+	height: 5px;
+	pointer-events: none;
+	width: 5px;
+	z-index: 16777271;
+}
+
+#super-highlighter {
+	background: rgba(255, 255, 3, 0.80);
+	border-radius: 50%;
+	height: 50px;
+	pointer-events: none;
+	width: 50px;
+	z-index: 16777271;
+}
