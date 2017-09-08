@@ -6,8 +6,23 @@ let lastScrolledTop = 0
 $('body').append('<div id="super-highlighter"></div>')
 $('body').append('<div id="super-dot"></div>')
 
+const dot = '#super-dot'
+const highlighter = '#super-highlighter'
+
+$(document).on('mouseenter', () => $(`${dot}, ${highlighter}`).show())
+$(document).on('mouseleave', () => $(`${dot}, ${highlighter}`).hide())
 $(document).on('mousemove', positionOnMouseMove)
 $(window).on('scroll', positionOnScroll)
+
+function moveLeft() {
+  $(dot).offset({ left: xMousePos - 2.5 })
+  $(highlighter).offset({ left: xMousePos - 25 })
+}
+
+function moveUp() {
+  $(dot).offset({ top: yMousePos - 2.5 })
+  $(highlighter).offset({ top: yMousePos - 25 })
+}
 
 function positionOnMouseMove(e) {
   xMousePos = e.pageX
@@ -32,12 +47,3 @@ function positionOnScroll() {
   }
 }
 
-function moveLeft() {
-  $('#super-dot').offset({ left: xMousePos - 2.5 })
-  $('#super-highlighter').offset({ left: xMousePos - 25 })
-}
-
-function moveUp() {
-  $('#super-dot').offset({ top: yMousePos - 2.5 })
-  $('#super-highlighter').offset({ top: yMousePos - 25 })
-}
