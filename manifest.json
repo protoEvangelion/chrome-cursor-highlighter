@@ -8,10 +8,10 @@
         "https://*.liferay.com/*"
       ],
       "css": [
-        "styles.css"
+        "dist/styles.css"
       ],
       "js": [
-        "index.js"
+        "dist/bundle.js"
       ],
       "run_at": "document_end"
     }
