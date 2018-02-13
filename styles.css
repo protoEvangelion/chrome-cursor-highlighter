@@ -1,17 +1,49 @@
-#super-dot {
-  background: rgba(255, 0, 0, 0.65);
-  border-radius: 50%;
-  height: 5px;
-  pointer-events: none;
-  width: 5px;
-  z-index: 16777271;
+.form-navigator, .toolbar {
+  background-color: #282a36 !important;
+  border: none !important;
+  position: sticky;
+  z-index: 999;
 }
 
-#super-highlighter {
-  background: rgba(255, 255, 3, 0.40);
-  border-radius: 50%;
-  height: 50px;
-  pointer-events: none;
-  width: 50px;
-  z-index: 16777271;
+.toolbar {
+  top: -1px;
+}
+
+.form-navigator {
+  top: 72px;
+}
+
+.form-navigator .article-name {
+  color: white !important;
+}
+
+.form-navigator .btn-primary {
+  background-color: #50fa7b !important;
+  color: #44475a !important;
+}
+
+.form-navigator .btn-cancel {
+  background-color: #ff5555	!important;
+}
+
+.form-navigator .btn-warning {
+  background-color: #f1fa8c !important;
+}
+
+.go-to-bottom, .go-to-top {
+  background-color: #bd93f9 !important;
+}
+
+.toolbar {
+  margin-left: -20px;
+  padding: 20px;
+}
+
+.toolbar .btn {
+  margin: 0 10px !important;
+}
+
+.util-toolbar {
+  position: absolute;
+  bottom: 0;
 }

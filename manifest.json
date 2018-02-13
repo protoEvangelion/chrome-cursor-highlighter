@@ -1,38 +1,26 @@
 {
-  "name": "Cursor Highlighter",
-  "description": "Highlight cursor with yellow circle",
+  "name": "Liferay Utils",
+  "description": "Random utilities that make developing in Liferay UI easier",
   "version": "2.0",
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "libs/jquery-1.12.0.min.js"
-      ],
-      "run_at": "document_start"
-    },
-    {
-      "matches": [
-        "<all_urls>"
+        "https://*.liferay.com/*"
       ],
       "css": [
         "styles.css"
       ],
       "js": [
-        "highlight.js"
+        "index.js"
       ],
       "run_at": "document_end"
     }
   ],
   "permissions": [
-    "activeTab",
-    "<all_urls>",
-    "https://*/*",
-    "http://*/*"
+    "https://*.liferay.com/*"
   ],
   "browser_action": {
-    "default_title": "Highlight Cursor"
+    "default_title": "utils"
   },
   "manifest_version": 2
 }
