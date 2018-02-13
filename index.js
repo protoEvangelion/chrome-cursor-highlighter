@@ -1,3 +1,5 @@
+'use strict'
+
 const doc = document
 const l = (text, thing) => console.log(text, '===>',  thing)
 
@@ -19,12 +21,8 @@ if (adminForm) {
 
     scrollTopBtn.classList.add('btn', 'go-to-top')
     scrollTopBtn.innerText = '↑'
-    scrollTopBtn.addEventListener('click', () => {
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
-    })
+    scrollTopBtn.addEventListener('click', () => document.documentElement.scrollTop = 0)
     scrollTopBtn.setAttribute('type', 'button')
-
-    l('tool', toolbar)
 
     toolbar.appendChild(scrollBottomBtn)
     toolbar.appendChild(scrollTopBtn)
