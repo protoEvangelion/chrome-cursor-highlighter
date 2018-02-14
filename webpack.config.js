@@ -30,12 +30,11 @@ module.exports = {
             {
               loader: 'postcss-loader',
               options: {
-                plugins: opts => {
+                plugins: () => {
                   return root => {
                     root.walkRules(rule => {
                       rule.walkDecls(decl => {
                         decl.value = decl.value + ' !important'
-                        console.log(decl.value)
                       })
                     })
                   }
