@@ -1,13 +1,15 @@
 'use strict'
 
+import './styles.scss'
+
 const doc = document
-const l = (text, thing) => console.log(text, '===>',  thing)
+
+const l = (text, thing) => console.log(text, '===>', thing) /* eslint-warn no-undef */
 
 const adminForm = doc.querySelector('.form-navigator')
-
+console.log('something')
 if (adminForm) {
   window.addEventListener('load', () => {
-    const header = doc.getElementById('banner')
     const footer = doc.getElementById('footer')
     const toolbar = doc.querySelector('.toolbar')
 
@@ -21,7 +23,7 @@ if (adminForm) {
 
     scrollTopBtn.classList.add('btn', 'go-to-top')
     scrollTopBtn.innerText = '↑'
-    scrollTopBtn.addEventListener('click', () => document.documentElement.scrollTop = 0)
+    scrollTopBtn.addEventListener('click', () => (document.documentElement.scrollTop = 0))
     scrollTopBtn.setAttribute('type', 'button')
 
     toolbar.appendChild(scrollBottomBtn)

@@ -4,13 +4,8 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "extends": [
-    "eslint:recommended",
-    "prettier"
-  ],
-  "plugins": [
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier"],
   "env": {
     "es6": true,
     "browser": true
@@ -18,6 +13,8 @@
   "globals": {
     "_": true,
     "__dirname": true,
+    "module": true,
+    "require": true,
     "window": true
   },
   "settings": {
@@ -41,6 +38,7 @@
     "no-console": 0,
     "no-constant-condition": 0,
     "no-shadow": 0,
-    "padded-blocks": 0,
+    "no-unused-vars": 1,
+    "padded-blocks": 0
   }
 }

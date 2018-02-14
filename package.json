@@ -3,14 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "lint-staged": {
-    "*.{js,json,md,scss}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.{js,json,md,scss}": ["prettier --write", "git add"],
+    "*.js": ["eslint --fix", "git add"]
   },
   "scripts": {
     "build": "npm run env:prod -- webpack",
@@ -33,11 +27,15 @@
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "2.6.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "husky": "^0.14.3",
     "lint-staged": "^6.1.0",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.0",
     "prettier": "1.10.2",
+    "progress-bar-webpack-plugin": "^1.10.0",
     "sass-loader": "^6.0.6",
-    "uglifyjs-webpack-plugin": "^1.1.8",
+    "style-loader": "^0.20.1",
     "webpack": "^3.11.0"
   }
 }

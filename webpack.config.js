@@ -1,29 +1,25 @@
-'use strict';
+'use strict'
 
-const path = require('path');
-const webpack = require('webpack')
+const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 module.exports = {
-  entry: './index.js',
+  entry: path.join(__dirname, 'src/index.js'),
 
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
 
-  plugins: [
-    new ExtractTextPlugin('styles.css'),
-  ],
+  plugins: [new ProgressBarPlugin(), new ExtractTextPlugin('styles.css')],
 
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader'
-        ]
+        use: ['babel-loader'],
       },
       {
         test: /\.scss$/,
@@ -31,16 +27,32 @@ module.exports = {
           fallback: 'style-loader',
           use: [
             'css-loader',
-            'sass-loader'
-          ]
-        })
-      }
-    ]
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: opts => {
+                  return root => {
+                    root.walkRules(rule => {
+                      rule.walkDecls(decl => {
+                        decl.value = decl.value + ' !important'
+                        console.log(decl.value)
+                      })
+                    })
+                  }
+                },
+                sourceMap: true,
+              },
+            },
+            'sass-loader',
+          ],
+        }),
+      },
+    ],
   },
 
   stats: {
-    colors: true
+    colors: true,
   },
 
-  devtool: 'source-map'
+  devtool: 'source-map',
 }

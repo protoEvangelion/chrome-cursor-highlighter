@@ -1,0 +1,44 @@
+.form-navigator,
+.toolbar {
+  background-color: #282a36;
+  border: none;
+  position: sticky;
+  z-index: 999;
+}
+
+.form-navigator {
+  top: 72px;
+
+  .article-name {
+    color: white;
+  }
+
+  .btn-primary {
+    background-color: #50fa7b;
+    color: #44475a;
+  }
+
+  .btn-cancel {
+    background-color: #ff5555;
+  }
+
+  .btn-warning {
+    background-color: #f1fa8c;
+  }
+}
+
+.toolbar {
+  margin-left: -20px;
+  padding: 20px;
+  top: -1px;
+
+  .btn {
+    margin: 0 10px;
+  }
+
+  .go-to-bottom,
+  .go-to-top {
+    background-color: #bd93f9;
+    font-size: 2rem;
+  }
+}
