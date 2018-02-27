@@ -1,5 +1,5 @@
 @function strip-unit($number) {
-  @return $number / ($number * 0 + 1);
+	@return $number / ($number * 0 + 1);
 }
 
 /* ---------- Borders ---------- */
@@ -35,12 +35,12 @@ $elevationReset: 0 0 0 0 $shadowBlurColor, 0 0 0 0 $shadowMainColor;
 
 $fontStackChinese: 'Source Sans Pro', 'Noto Sans SC Sliced', arial, helvetica, sans-serif;
 $fontStackChineseLongform: 'Source Serif Pro', 'Noto Sans SC Sliced', georgia, cambria,
-  'Times New Roman', times, serif;
+	'Times New Roman', times, serif;
 $fontStackDefault: 'Source Sans Pro', arial, helvetica, sans-serif;
 $fontStackDefaultLongform: 'Source Serif Pro', georgia, cambria, 'Times New Roman', times, serif;
 $fontStackJapanese: 'Source Sans Pro', 'Noto Sans Japanese', arial, helvetica, sans-serif;
 $fontStackJapaneseLongform: 'Source Serif Pro', 'Noto Sans Japanese', georgia, cambria,
-  'Times New Roman', times, serif;
+	'Times New Roman', times, serif;
 
 $fontWeightBold: 700;
 $fontWeightDefault: 400;

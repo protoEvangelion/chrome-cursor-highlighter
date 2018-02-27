@@ -1,0 +1,85 @@
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+
+#eventHotelsActivities {
+	.cards-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		.card {
+			box-sizing: border-box;
+			margin: $standardSpacing $smallSpacing;
+			padding: $standardSpacing;
+			width: calc(25% - 1em);
+
+			&:hover {
+				box-shadow: $elevation2;
+			}
+		}
+	}
+
+	.hotels-wrapper .activities-wrapper {
+		padding: $standardSpacing $smallSpacing $standardSpacing 0;
+	}
+
+	.hotels-wrapper {
+		.hotel-description {
+			padding: $standardSpacing 0 $largeSpacing;
+		}
+
+		.hotel {
+			.hotel-image {
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 274px;
+				margin-bottom: 2em;
+				width: 100%;
+			}
+
+			.hotel-meta-info-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				.hotel-meta-info {
+					align-items: center;
+					display: flex;
+					padding: $standardSpacing $smallSpacing 0 0;
+
+					@extend %small-caps;
+
+					span {
+						padding-left: 0.25em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#eventHotelsActivities .cards-wrapper .card {
+		max-width: 430px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#eventHotelsActivities .cards-wrapper .card {
+		width: calc(33% - 1em);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#eventHotelsActivities .cards-wrapper .card {
+		width: calc(50% - 1em);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#eventHotelsActivities .cards-wrapper .card {
+		box-shadow: $elevation2;
+		width: 100%;
+	}
+}
