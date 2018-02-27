@@ -1,0 +1,22 @@
+@import 'variables';
+
+#eventHotelsActivities {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      box-sizing: border-box;
+      margin: $standardSpacing;
+      padding: $standardSpacing;
+      width: 33%;
+
+      box-shadow: $elevation2;
+
+      .hotel-meta-info-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

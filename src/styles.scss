@@ -1,45 +1,81 @@
-.form-navigator,
-.toolbar {
-  background-color: #282a36;
-  border: none;
-  position: sticky;
-  z-index: 999;
-}
+@import 'custom';
 
-.form-navigator {
-  top: 72px;
+// Dracula Palette
+$Background: #282a36;
+$Current: #44475a;
+$Selection: #44475a;
+$Foreground: #f8f8f2;
+$Comment: #6272a4;
+$Cyan: #8be9fd;
+$Green: #50fa7b;
+$Orange: #ffb86c;
+$Pink: #ff79c6;
+$Purple: #bd93f9;
+$Red: #ff5555;
+$Yellow: #f1fa8c;
 
-  .article-name {
-    color: white;
+.aui {
+  .button-holder,
+  .form-navigator,
+  .toolbar {
+    background: $Background;
+    border: none;
+    position: sticky;
+    z-index: 999;
+
+    .btn {
+      background: $Comment;
+      border: none;
+      color: $Foreground;
+      margin: 0 10px;
+      padding: 0.5rem 1rem;
+      text-shadow: none;
+    }
+
+    .btn-primary {
+      background: $Green;
+      color: $Current;
+    }
+
+    .btn-cancel {
+      background: $Red;
+    }
+
+    .btn-warning {
+      background: $Yellow;
+    }
   }
 
-  .btn-primary {
-    background-color: #50fa7b;
-    color: #44475a;
+  .button-holder {
+    padding: 0.5rem;
+    position: fixed;
+    top: -20px;
+    width: 100vw;
   }
 
-  .btn-cancel {
-    background-color: #ff5555;
+  .form-navigator {
+    top: 72px;
+
+    .article-name {
+      color: $Foreground;
+    }
+
+    .tab-label {
+      color: $Cyan;
+      text-shadow: none;
+    }
   }
 
-  .btn-warning {
-    background-color: #f1fa8c;
-  }
-}
+  .toolbar {
+    margin-left: -20px;
+    padding: 20px;
+    top: -1px;
 
-.toolbar {
-  margin-left: -20px;
-  padding: 20px;
-  top: -1px;
-
-  .btn {
-    margin: 0 10px;
-    padding: 0.5rem 1rem;
-  }
-
-  .go-to-bottom,
-  .go-to-top {
-    background-color: #bd93f9;
-    font-weight: 700;
+    .go-to-bottom,
+    .go-to-top {
+      background: $Purple;
+      color: $Foreground;
+      font-weight: 700;
+    }
   }
 }

@@ -17,16 +17,16 @@ if (adminForm) {
     const scrollTopBtn = doc.createElement('button')
 
     scrollBottomBtn.classList.add('btn', 'go-to-bottom')
-    scrollBottomBtn.innerText = '↓'
+    scrollBottomBtn.innerText = '⬇'
     scrollBottomBtn.addEventListener('click', () => footer.scrollIntoView())
     scrollBottomBtn.setAttribute('type', 'button')
 
     scrollTopBtn.classList.add('btn', 'go-to-top')
-    scrollTopBtn.innerText = '↑'
+    scrollTopBtn.innerText = '⬆'
     scrollTopBtn.addEventListener('click', () => (document.documentElement.scrollTop = 0))
     scrollTopBtn.setAttribute('type', 'button')
 
-    toolbar.appendChild(scrollBottomBtn)
     toolbar.appendChild(scrollTopBtn)
+    toolbar.appendChild(scrollBottomBtn)
   })
 }
