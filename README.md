@@ -1,5 +1,3 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/protoevangelion/liferay-chrome-utils/badge.svg?targetFile=package.json)](https://snyk.io/test/github/protoevangelion/liferay-chrome-utils?targetFile=package.json)
-
 <p align="center">
   <a href="https://snyk.io/test/github/protoevangelion/liferay-chrome-utils?targetFile=package.json">
     <img src="https://snyk.io/test/github/protoevangelion/liferay-chrome-utils/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/protoevangelion/liferay-chrome-utils?targetFile=package.json" style="max-width:100%;">
