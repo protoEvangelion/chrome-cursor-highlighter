@@ -7,7 +7,7 @@ const doc = document
 const l = (text, thing) => console.log(text, '===>', thing) /* eslint-warn no-undef */
 
 const adminForm = doc.querySelector('.form-navigator')
-console.log('something')
+
 if (adminForm) {
   window.addEventListener('load', () => {
     const footer = doc.getElementById('footer')
@@ -30,3 +30,6 @@ if (adminForm) {
     toolbar.appendChild(scrollBottomBtn)
   })
 }
+
+// Add responsive class to html element
+document.querySelector('html').classList.add('responsive')

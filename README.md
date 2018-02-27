@@ -11,6 +11,12 @@
 
 ## Run app
 
+#### Install Dependencies
+
+```shell
+npm install
+```
+
 #### To run the build once run:
 
 ```shell

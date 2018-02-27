@@ -13,7 +13,9 @@
   "globals": {
     "_": true,
     "__dirname": true,
+    "NODE_ENV": true,
     "module": true,
+    "process": true,
     "require": true,
     "window": true
   },
