@@ -1,9 +1,9 @@
-'use strict'
+'use strict';
 
-const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const ProgressBarPlugin = require('progress-bar-webpack-plugin')
-const webpack = require('webpack')
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: path.join(__dirname, 'src/index.js'),
@@ -42,11 +42,11 @@ module.exports = {
 										root.walkRules(rule => {
 											if (rule.selector.includes('.aui')) {
 												rule.walkDecls(decl => {
-													decl.value = decl.value + ' !important'
-												})
+													decl.value = decl.value + ' !important';
+												});
 											}
-										})
-									}
+										});
+									};
 								},
 								sourceMap: true,
 							},
@@ -63,4 +63,4 @@ module.exports = {
 	},
 
 	devtool: 'source-map',
-}
+};

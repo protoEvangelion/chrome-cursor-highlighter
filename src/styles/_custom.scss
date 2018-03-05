@@ -3,6 +3,13 @@
 @import 'typography';
 
 #eventHotelsActivities {
+	width: 100%;
+
+	.activities-wrapper,
+	.hotels-wrapper {
+		padding: $standardSpacing $smallSpacing $standardSpacing 0;
+	}
+
 	.cards-wrapper {
 		display: flex;
 		flex-wrap: wrap;
@@ -10,50 +17,47 @@
 		.card {
 			box-sizing: border-box;
 			margin: $standardSpacing $smallSpacing;
-			padding: $standardSpacing;
+			padding: 2em;
 			width: calc(25% - 1em);
 
 			&:hover {
 				box-shadow: $elevation2;
 			}
-		}
-	}
 
-	.hotels-wrapper .activities-wrapper {
-		padding: $standardSpacing $smallSpacing $standardSpacing 0;
-	}
-
-	.hotels-wrapper {
-		.hotel-description {
-			padding: $standardSpacing 0 $largeSpacing;
-		}
-
-		.hotel {
-			.hotel-image {
+			.card-image {
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
-				height: 274px;
 				margin-bottom: 2em;
 				width: 100%;
+
+				&:after {
+					content: '';
+					display: block;
+					padding-bottom: 100%;
+				}
 			}
 
-			.hotel-meta-info-wrapper {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
+			.card-description {
+				padding-top: $smallSpacing;
+			}
+		}
+	}
 
-				.hotel-meta-info {
-					align-items: center;
-					display: flex;
-					padding: $standardSpacing $smallSpacing 0 0;
+	.hotel-meta-info-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 
-					@extend %small-caps;
+		.hotel-meta-info {
+			align-items: center;
+			display: flex;
+			padding: $standardSpacing $smallSpacing 0 0;
 
-					span {
-						padding-left: 0.25em;
-					}
-				}
+			@extend %small-caps;
+
+			span {
+				padding-left: 0.25em;
 			}
 		}
 	}
