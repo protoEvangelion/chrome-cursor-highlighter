@@ -2,7 +2,6 @@
 
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -14,7 +13,6 @@ module.exports = {
 	},
 
 	plugins: [
-		new ProgressBarPlugin(),
 		new ExtractTextPlugin('styles.css'),
 		new webpack.DefinePlugin({
 			NODE_ENV: JSON.stringify(process.env.NODE_ENV),
