@@ -1,6 +1,5 @@
 'use strict';
 
-import './agenda';
 import '../styles/styles.scss';
 
 const doc = document;

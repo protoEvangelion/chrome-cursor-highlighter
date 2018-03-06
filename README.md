@@ -15,13 +15,15 @@
 npm install
 ```
 
-#### To run the build once run:
+> It is necessary to either run 1 of the 2 build options below
+
+#### 1. To run the build once run:
 
 ```shell
 npm run build
 ```
 
-#### To run the build in watch mode run:
+#### 2. To run the build in watch mode run:
 
 ```shell
 npm run dev
@@ -32,7 +34,7 @@ npm run dev
 1. **Navigate** to chrome://extensions
 2. Make sure `developer mode` is selected
 3. **Click** "Load unpacked extension"
-4. **Select** the `dist` directory at the root of this repo (That's where webpack outputs bundles)
+4. **Select** the `dist` directory in the `src` directory of this repo (That's where webpack outputs bundles)
 5. **Optional**: Download the [Dev extensions reload plugin](https://chrome.google.com/webstore/detail/dev-extensions-reload/bbanndmhbmgajamonlgnjnfdbifbnbdj) to automatically reload your extensions so you don't have to manually refresh the extensions page and the page you are working on
 
 ## Recommended Plugins to install for your code editor:

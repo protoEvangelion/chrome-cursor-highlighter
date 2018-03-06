@@ -1,23 +1,27 @@
 'use strict';
 
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
+
+const plugins = [
+	new CleanWebpackPlugin(['src/dist']),
+	new ExtractTextPlugin('styles.css'),
+	new webpack.DefinePlugin({
+		NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+	}),
+];
 
 module.exports = {
 	entry: path.join(__dirname, 'src/js/index.js'),
 
 	output: {
-		path: path.join(__dirname, 'dist'),
+		path: path.join(__dirname, 'src/dist'),
 		filename: 'bundle.js',
 	},
 
-	plugins: [
-		new ExtractTextPlugin('styles.css'),
-		new webpack.DefinePlugin({
-			NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-		}),
-	],
+	plugins: plugins,
 
 	module: {
 		rules: [
