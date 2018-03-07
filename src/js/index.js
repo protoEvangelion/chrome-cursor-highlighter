@@ -1,6 +1,6 @@
 'use strict';
 
-import '../styles/styles.scss';
+import '../styles/main.scss';
 
 const doc = document;
 

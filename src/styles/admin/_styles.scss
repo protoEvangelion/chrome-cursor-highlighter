@@ -1,5 +1,3 @@
-@import 'custom';
-
 // Dracula Palette
 $Background: #282a36;
 $Current: #44475a;
@@ -19,7 +17,7 @@ $Yellow: #f1fa8c;
 
 	.button-holder,
 	.form-navigator,
-	.toolbar {
+	.journal-article-wrapper-content > .toolbar {
 		background: $Background;
 		border: none;
 		position: sticky;
@@ -50,10 +48,15 @@ $Yellow: #f1fa8c;
 
 	// Edit Template Button Group
 	.button-holder {
+		align-items: center;
+		display: flex;
 		padding: 0.5rem;
 		position: fixed;
 		top: -20px;
-		width: 100vw;
+
+		.btn {
+			margin: 0.5rem;
+		}
 	}
 
 	.form-navigator {
@@ -73,7 +76,7 @@ $Yellow: #f1fa8c;
 		}
 	}
 
-	.toolbar {
+	.journal-article-wrapper-content > .toolbar {
 		margin-left: -20px;
 		padding: 20px;
 		top: -1px;

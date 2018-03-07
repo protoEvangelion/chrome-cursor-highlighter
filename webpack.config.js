@@ -42,11 +42,11 @@ module.exports = {
 								plugins: () => {
 									return root => {
 										root.walkRules(rule => {
-											if (rule.selector.includes('.aui')) {
-												rule.walkDecls(decl => {
-													decl.value = decl.value + ' !important';
-												});
-											}
+											// if (rule.selector.includes('.aui')) {
+											rule.walkDecls(decl => {
+												decl.value = decl.value + ' !important';
+											});
+											// }
 										});
 									};
 								},

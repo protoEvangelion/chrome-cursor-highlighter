@@ -1,0 +1,19 @@
+%flexbox {
+	@include experimental-value(display, box, -moz, -webkit, not -o, not -ms, not -khtml, not official);
+	@include experimental-value(display, flex, -moz, -webkit, not -o, not -ms, not -khtml, official);
+	@include experimental-value(display, flexbox, not -moz, not -webkit, not -o, -ms, not -khtml, not official);
+}
+
+%flex-container {
+	@extend %flexbox;
+	@include box-sizing(border-box);
+	@include flex-wrap(wrap);
+}
+
+%small-caps {
+	font-weight: $fontWeightSemiBold;
+	text-transform: uppercase;
+
+	@include font-size(0.8rem, 13px);
+	@include scale(letter-spacing, 0.0625em, 1px);
+}
