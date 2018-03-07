@@ -10,7 +10,11 @@
 			"run_at": "document_end"
 		}
 	],
-	"permissions": ["https://*.liferay.com/*", "http://localhost:3000/*"],
+	"permissions": [
+		"https://www.liferay.com/*",
+		"https://www-uat.liferay.com/*",
+		"http://localhost:3000/*"
+	],
 	"browser_action": {
 		"default_title": "utils"
 	},
