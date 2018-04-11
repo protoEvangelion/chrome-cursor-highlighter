@@ -14,45 +14,47 @@ $Yellow: #f1fa8c;
 
 .aui .signed-in.controls-hidden {
 	font-family: 'Source Sans Pro';
+	font-size: 14px;
 
-	.button-holder,
+	.button-holder.journal-article-button-row,
 	.form-navigator,
 	.journal-article-wrapper-content > .toolbar {
 		background: $Background;
 		border: none;
 		position: sticky;
 		z-index: 999;
+	}
 
-		.btn {
-			background: $Comment;
-			border: none;
-			color: $Foreground;
-			margin: 0 10px;
-			padding: 0.5rem 1rem;
-			text-shadow: none;
-		}
+	.btn {
+		background: $Comment;
+		border: none;
+		color: $Foreground;
+		margin: 0 10px;
+		padding: 0.5rem 1rem;
+		text-shadow: none;
+		transform: none;
+	}
 
-		.btn-primary {
-			background: $Green;
-			color: $Current;
-		}
+	.btn-primary {
+		background: $Green;
+		color: $Current;
+	}
 
-		.btn-cancel {
-			background: $Red;
-		}
+	.btn-cancel {
+		background: $Red;
+	}
 
-		.btn-warning {
-			background: $Yellow;
-		}
+	.btn-warning {
+		background: $Yellow;
 	}
 
 	// Edit Template Button Group
-	.button-holder {
+	.button-holder.journal-article-button-row {
 		align-items: center;
 		display: flex;
 		padding: 0.5rem;
 		position: fixed;
-		top: -20px;
+		top: -15px;
 
 		.btn {
 			margin: 0.5rem;
@@ -79,7 +81,7 @@ $Yellow: #f1fa8c;
 	.journal-article-wrapper-content > .toolbar {
 		margin-left: -20px;
 		padding: 20px;
-		top: -1px;
+		top: 55px;
 
 		.go-to-bottom,
 		.go-to-top {

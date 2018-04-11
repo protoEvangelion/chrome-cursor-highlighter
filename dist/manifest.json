@@ -5,8 +5,8 @@
 	"content_scripts": [
 		{
 			"matches": ["https://*.liferay.com/*", "http://localhost:3000/*"],
-			"css": ["dist/styles.css"],
-			"js": ["dist/bundle.js"],
+			"css": ["styles.css"],
+			"js": ["bundle.js"],
 			"run_at": "document_end"
 		}
 	],
