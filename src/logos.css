@@ -1,0 +1,116 @@
+a:hover,
+.more-link:hover {
+	color: #d3b5fd !important;
+}
+
+body,
+input,
+.content-pane-stack,
+.lemma-reference:after,
+.original-language-word:after,
+.reference:after,
+.resourcetext,
+.toolbar,
+.toolbar-single,
+.usage-post-text:after,
+.word-and-transliteration > div,
+.word-and-transliteration:after,
+.word-and-transliteration > div span:after,
+.word-by-word-lemma-info span:after,
+.word-by-word-verse-text-unit:after {
+	background: #282a36 !important;
+	color: #f8f8f2 !important;
+}
+
+body a,
+.content-pane-stack a,
+.more-link,
+.resourcetext a {
+	color: #bd93f9 !important;
+}
+
+.dropdown-button {
+	color: #f1fa8c !important;
+}
+
+header,
+.tab-strip span {
+	background: #1d1f2b !important;
+	color: #f8f8f2 !important;
+}
+
+header a:not([href='/']) svg:hover path {
+	fill: #bd93f9 !important;
+}
+
+header .text-tab:hover .dropdown-button {
+	color: #bd93f9 !important;
+}
+
+input {
+	border: 1px solid #ff79c6 !important;
+}
+
+input[type='text']:focus {
+	box-shadow: 0 0 5px #50fa7b !important;
+	border: 1px solid #50fa7b !important;
+}
+
+.more-link {
+	font-size: 1.25em !important;
+}
+
+p[style*='font-size:2.675em'] {
+	color: #bd93f9 !important;
+}
+
+p[style*='font-size:.925em'] {
+	color: #8be9fd !important;
+}
+
+span[style*='font-size:1.5em'] {
+	color: #50fa7b !important;
+}
+
+.sub-tab:hover {
+	background-color: #4d5b85 !important;
+}
+
+.sub-tab:hover .sub-tab-title {
+	color: #bd93f9 !important;
+}
+
+.sub-tab-icon svg path {
+	fill: rgb(180, 179, 179) !important;
+}
+
+.sub-tab:hover .sub-tab-icon svg path {
+	fill: #bd93f9 !important;
+}
+
+.tab-dropdown-wrapper {
+	background: #6272a4 !important;
+	color: #f8f8f2 !important;
+}
+
+.tab-strip .panel-tab-wrapper.selected::before {
+	background: #ff79c6 !important;
+}
+
+.text-tab .dropdown-button {
+	color: #cfcfcf !important;
+}
+
+.toolbar-top-right-section path {
+	fill: #ff79c6 !important;
+}
+
+.word-by-word-text-linked {
+	color: #ffb86c !important;
+}
+
+.word-by-word-text-selected {
+	background: inherit !important;
+	color: #50fa7b !important;
+	text-shadow: 0 0 3px #50fa7b;
+}

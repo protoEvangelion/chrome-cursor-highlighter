@@ -14,6 +14,7 @@
 		"_": true,
 		"__dirname": true,
 		"AUI": true,
+		"GM_addStyle": true,
 		"Liferay": true,
 		"module": true,
 		"NODE_ENV": true,
