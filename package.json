@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"lint-staged": {
-		"*.{js,json,md,scss}": ["prettier --write", "git add"],
+		"*.{js,json,scss}": ["prettier --write", "git add"],
 		"*.js": ["eslint --fix", "git add"]
 	},
 	"scripts": {

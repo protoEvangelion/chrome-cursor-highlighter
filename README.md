@@ -11,7 +11,17 @@
 
 > This theme is currently in Alpha
 
-* [Liferay Dark Admin Theme (For Liferay v6.2)](#liferay-dark-admin-theme-for-liferay-v62) - [Prerequisites](#prerequisites) - [Building Theme Manually](#building-theme-manually) - [Install Dependencies](#install-dependencies) - [1. To run the build once run:](#1-to-run-the-build-once-run) - [2. To run the build in watch mode run:](#2-to-run-the-build-in-watch-mode-run) - [Setup in Browser Plugin](#setup-in-browser-plugin) - [Recommended Plugins to install for your code editor:](#recommended-plugins-to-install-for-your-code-editor) - [Prettier (formatter primarily for JS files)](#prettier-formatter-primarily-for-js-files) - [ESlint (linter)](#eslint-linter) - [EditorConfig (formatter)](#editorconfig-formatter)
+- [Liferay Dark Admin Theme (For Liferay v6.2)](#liferay-dark-admin-theme-for-liferay-v62)
+	- [Prerequisites](#prerequisites)
+	- [Building Theme Manually](#building-theme-manually)
+			- [Install Dependencies](#install-dependencies)
+			- [1. To run the build once run:](#1-to-run-the-build-once-run)
+			- [2. To run the build in watch mode run:](#2-to-run-the-build-in-watch-mode-run)
+	- [Setup in Browser Plugin](#setup-in-browser-plugin)
+	- [Recommended Plugins to install for your code editor:](#recommended-plugins-to-install-for-your-code-editor)
+		- [Prettier (formatter primarily for JS files)](#prettier-formatter-primarily-for-js-files)
+		- [ESlint (linter)](#eslint-linter)
+		- [EditorConfig (formatter)](#editorconfig-formatter)
 
 * Note: this theme uses [Tampermonkey](https://tampermonkey.net/) because it requires a small amount of JS to detect if the user is in admin mode
   * It then will load the theme only when the user is on an admin page
