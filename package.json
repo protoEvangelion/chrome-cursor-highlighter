@@ -1,5 +1,5 @@
 {
-	"name": "liferay-ui-superpowers",
+	"name": "liferay-admin-dark-theme",
 	"version": "1.0.0",
 	"description": "",
 	"lint-staged": {
@@ -7,8 +7,8 @@
 		"*.js": ["eslint --fix", "git add"]
 	},
 	"scripts": {
-		"build": "npm run env:prod -- gulp sass",
-		"dev": "npm run env:dev -- gulp sass:watch",
+		"build": "npm run env:prod -- gulp",
+		"dev": "npm run env:dev -- gulp watch",
 		"env:prod": "cross-env NODE_ENV=production",
 		"env:dev": "cross-env NODE_ENV=development",
 		"format": "prettier --ignore-path ./.prettierignore --write \"**/*.{js,json,md,scss}\"",
@@ -17,16 +17,13 @@
 	"author": "Ryan Garant",
 	"license": "MIT",
 	"devDependencies": {
-		"babel-core": "^6.26.0",
-		"babel-eslint": "^8.2.1",
-		"babel-loader": "^7.1.2",
-		"babel-preset-env": "^1.6.1",
 		"cross-env": "^5.1.3",
 		"eslint": "4.17.0",
 		"eslint-config-prettier": "2.9.0",
 		"eslint-plugin-import": "^2.8.0",
 		"eslint-plugin-prettier": "2.6.0",
 		"gulp": "^3.9.1",
+		"gulp-inject-string": "^1.1.1",
 		"gulp-postcss": "^7.0.1",
 		"gulp-sass": "^4.0.1",
 		"husky": "^0.14.3",

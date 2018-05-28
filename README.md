@@ -7,12 +7,29 @@
   </a>
 </p>
 
-## Run app
+# Liferay Dark Admin Theme (For Liferay v6.2)
+
+> This theme is currently in Alpha
+
+* Note: this theme uses [Tampermonkey](https://tampermonkey.net/) because it requires a small amount of JS to detect if the user is in admin mode
+  * It then will load the theme only when the user is on an admin page
+  * Until the theme is uploaded to Tampermonkey's repository, you will need to load this manually (instructions in the link above)
+  * If you want to change the urls this will load on, modify the `@match` rules in `src/tamperMonkeyTemplate.js`
+
+## Prerequisites
+
+* [Nodejs](https://nodejs.org/)
+* Npm (comes with the download of Nodejs)
+* A terminal
+
+## Building Theme Manually
 
 #### Install Dependencies
 
+* From your terminal run:
+
 ```shell
-npm install
+npm i
 ```
 
 > It is necessary to either run 1 of the 2 build options below
@@ -29,13 +46,11 @@ npm run build
 npm run dev
 ```
 
-## Setup plugin in chrome
+## Setup in Browser Plugin
 
-1. **Navigate** to chrome://extensions
-2. Make sure `developer mode` is selected
-3. **Click** "Load unpacked extension"
-4. **Select** the `dist` directory in the `src` directory of this repo (That's where webpack outputs bundles)
-5. **Optional**: Download the [Dev extensions reload plugin](https://chrome.google.com/webstore/detail/dev-extensions-reload/bbanndmhbmgajamonlgnjnfdbifbnbdj) to automatically reload your extensions so you don't have to manually refresh the extensions page and the page you are working on
+* You will need to download the Tampermonkey extension for whichever browser you are using
+* After you run the build, it will be output to the `dist/tamperMonkeyTemplate.js`
+* The final step is to copy that output and paste it into a new Tampermonkey script
 
 ## Recommended Plugins to install for your code editor:
 
