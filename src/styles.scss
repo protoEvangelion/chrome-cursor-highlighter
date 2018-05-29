@@ -16,12 +16,18 @@ $Yellow: #f1fa8c;
 	font-family: 'Source Sans Pro';
 	font-size: 14px;
 
+	header,
+	footer {
+		display: none;
+	}
+
 	.button-holder.journal-article-button-row,
 	.form-navigator,
 	.journal-article-wrapper-content > .toolbar {
 		background: $Background;
 		border: none;
 		position: sticky;
+		top: 0;
 		z-index: 999;
 	}
 
@@ -62,7 +68,7 @@ $Yellow: #f1fa8c;
 	}
 
 	.form-navigator {
-		top: 72px;
+		// top: 72px;
 
 		.article-name {
 			color: $Foreground;
@@ -81,7 +87,7 @@ $Yellow: #f1fa8c;
 	.journal-article-wrapper-content > .toolbar {
 		margin-left: -20px;
 		padding: 20px;
-		top: 55px;
+		// top: 55px;
 
 		.go-to-bottom,
 		.go-to-top {
@@ -89,5 +95,12 @@ $Yellow: #f1fa8c;
 			color: $Foreground;
 			font-weight: 700;
 		}
+	}
+
+	.super-toolbar {
+		background: $Background;
+		position: fixed;
+		right: 0;
+		top: 0;
 	}
 }

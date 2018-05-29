@@ -7,7 +7,7 @@
 		"*.js": ["eslint --fix", "git add"]
 	},
 	"scripts": {
-		"build": "npm run env:prod -- gulp",
+		"build": "npm run env:prod -- gulp inject",
 		"dev": "npm run env:dev -- gulp watch",
 		"env:prod": "cross-env NODE_ENV=production",
 		"env:dev": "cross-env NODE_ENV=development",
@@ -22,7 +22,7 @@
 		"eslint-config-prettier": "2.9.0",
 		"eslint-plugin-import": "^2.8.0",
 		"eslint-plugin-prettier": "2.6.0",
-		"gulp": "^3.9.1",
+		"gulp": "^4.0.0",
 		"gulp-inject-string": "^1.1.1",
 		"gulp-postcss": "^7.0.1",
 		"gulp-sass": "^4.0.1",
